@@ -21,7 +21,7 @@ angular.module('ngRouteExample', ['ngRoute'])
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
    .when('/Book/:bookId', {
-    templateUrl: 'Controllers/book.html',
+    templateUrl: 'book.html',
     controller: 'BookController',
     resolve: {
       // I will cause a 1 second delay
@@ -33,7 +33,7 @@ angular.module('ngRouteExample', ['ngRoute'])
     }
   })
   .when('/Book/:bookId/ch/:chapterId', {
-    templateUrl: 'Controllers/chapter.html',
+    templateUrl: 'chapter.html',
     controller: 'ChapterController'
   });
 
